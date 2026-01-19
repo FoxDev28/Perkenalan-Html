@@ -1,24 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profil Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Card | Perkenalan Diri</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Tambahkan ikon dari Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background dengan gradasi animasi -->
+    <div class="background"></div>
+
     <div class="main">
-        <div class="img"></div>
-        <h1>nama kalian</h1>
-        <div class="text">Murid Baru Belajar from <strong>Tkota kalian</strong></div>
-        <p>Halo,Perkenalkan nama saya nama kalian.Saya bisa di panggil dengan nama ....,saya hanya orang yang ingin belajar coding walupun saya tidak bisa.Saya membuat ini masih Menyontek Youtube
-            Semoga dengan belajar ini saya menjadi pecoding yang handal ,semoga belajarku ini mengeluarkan hasil yang maksimal.
-            Inilah perkenalan singkat saya Terimakasih......
+        <!-- Foto Profil dengan efek lingkaran dan bayangan -->
+        <div class="img-container">
+            <div class="img"></div>
+            <div class="img-overlay">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+
+        <!-- Nama dengan animasi muncul -->
+        <h1 class="profile-name">FoxDev28</h1>
+        <div class="text">Murid Baru Belajar dari <strong>Malang, Jawa Timur</strong></div>
+
+        <!-- Garis pemisah dekoratif -->
+        <div class="divider"></div>
+
+        <!-- Paragraf dengan gaya lebih menarik -->
+        <p class="profile-desc">
+            Halo, perkenalkan nama saya FoxDev28. Bisa dipanggil saja Fox! Saya hanya orang yang ingin belajar coding meskipun masih banyak yang belum bisa. 
+            Awalnya saya membuat ini dengan menyimak tutorial dari YouTube, tapi sekarang saya mulai mencoba mengembangkannya sendiri.
+            Semoga dengan belajar yang konsisten, saya bisa menjadi programmer yang handal dan karya saya bisa bermanfaat bagi banyak orang. 
+            Ini dia perkenalan singkat saya, terima kasih sudah mampir! 🚀
         </p>
-        <i>Media sosial saya</i>
-        <ul>
-            <li><a href="link jika ada"><img src="yt.png" width="25px" height="25px"></a></li>
-            <li><a href="link "><img src="git.png" width="25px" height="25px"></a></li>
-            <li><a href="link"><img src="dc.png" width="25px" height="25px"></a></li>
+
+        <div class="social-label">
+            <i class="fas fa-link"></i> Media Sosial Saya
+        </div>
+
+        <!-- Icon media sosial dengan efek hover -->
+        <ul class="social-links">
+            <li>
+                <a href="https://youtube.com" target="_blank" title="YouTube">
+                    <img src="yt.png" width="25px" height="25px">
+                    <span class="social-tooltip">YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/FoxDev28" target="_blank" title="GitHub">
+                    <img src="git.png" width="25px" height="25px">
+                    <span class="social-tooltip">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.com" target="_blank" title="Discord">
+                    <img src="dc.png" width="25px" height="25px">
+                    <span class="social-tooltip">Discord</span>
+                </a>
+            </li>
         </ul>
+
+        <!-- Tombol tambahan untuk kesan lebih interaktif -->
+        <a href="#!" class="btn-contact">
+            <i class="fas fa-envelope"></i> Hubungi Saya
+        </a>
     </div>
+
+    <!-- Footer kecil -->
+    <footer class="page-footer">
+        <p>&copy; 2024 FoxDev28 | Belajar Coding Semangat!</p>
+    </footer>
 </body>
 </html>
